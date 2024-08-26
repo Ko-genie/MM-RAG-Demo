@@ -15,7 +15,7 @@ from embedchain.loaders.base_loader import BaseLoader
 load_dotenv()
 
 # Supported file types
-SUPPORTED_FILE_TYPES = ["pdf", "docx", "csv", "jpeg", "jpg", "webp"]
+SUPPORTED_FILE_TYPES = ["pdf", "docx", "csv", "jpeg", "jpg", "webp", "png"]
 
 # Retrieve OpenAI API Key from environment
 OpenAI_Api_Key = os.getenv("OpenAI_Api_Key")
