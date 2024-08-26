@@ -14,6 +14,35 @@ from embedchain.loaders.base_loader import BaseLoader
 # Load environment variables
 load_dotenv()
 
+ # Set the page configuration with a white background
+st.set_page_config(
+    page_title="Ad Creator",
+    page_icon=":bulb:",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
+# Apply custom CSS to set the background color to white
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: blueviolet;
+    }
+    .st-emotion-cache-usj992 {
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 70px;
+    padding-top: 1rem;
+    background-color: #FCFBFC;
+    z-index: 99;
+}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Supported file types
 SUPPORTED_FILE_TYPES = ["pdf", "docx", "csv", "jpeg", "jpg", "webp", "png"]
 
@@ -29,6 +58,7 @@ def clear_chroma_db():
 
 # Clear Chroma database directory
 clear_chroma_db()
+
 
 class CustomImageLoader(BaseLoader):
     def load(self, file_path: str):
@@ -297,3 +327,4 @@ if (prompt := st.chat_input("Ask me anything!")):
         print("Answer: ", full_response)
         st.session_state.messages.append({"role": "assistant", "content": full_response})
         del prompt
+
