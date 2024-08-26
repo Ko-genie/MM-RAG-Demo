@@ -17,7 +17,7 @@ load_dotenv()
  # Set the page configuration with a white background
 st.set_page_config(
     page_title="Ad Creator",
-    page_icon=":bulb:",
+    page_icon="icon.png",
     layout="centered",
     initial_sidebar_state="expanded"
 )
@@ -26,17 +26,27 @@ st.set_page_config(
 st.markdown(
     """
     <style>
+
     .main {
-        background-color: blueviolet;
+        background-color: #E7DECC;
     }
+    
+
     .st-emotion-cache-usj992 {
     position: fixed;
     bottom: 0px;
     padding-bottom: 70px;
     padding-top: 1rem;
-    background-color: #FCFBFC;
+    background-color:#E7DECC ;
     z-index: 99;
 }
+.st-emotion-cache-10trblm {
+    position: relative;
+    flex: 1 1 0%;
+    margin-left: calc(3rem);
+    color: black;
+}
+
     </style>
     """,
     unsafe_allow_html=True
