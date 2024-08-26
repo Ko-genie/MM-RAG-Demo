@@ -169,7 +169,7 @@ def process_file(file, app):
         
         os.remove(temp_file_path)
         st.markdown(f"Added {file_name} to knowledge base!")
-        return Tru
+        return True
     except Exception as e:
         print(f"Error in process_file for {file_name}: {str(e)}")
         print(f"Error type: {type(e)}")
