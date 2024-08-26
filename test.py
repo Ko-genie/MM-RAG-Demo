@@ -16,7 +16,7 @@ load_dotenv()
 
  # Set the page configuration with a white background
 st.set_page_config(
-    page_title="Ad Creator",
+    page_title="KOgenie",
     page_icon="icon.png",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -46,7 +46,16 @@ st.markdown(
     margin-left: calc(3rem);
     color: black;
 }
-
+.st-d5{
+    cursor:pointer;
+}
+p, ol, ul, dl {
+    margin: 0px 0px 1rem;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
     </style>
     """,
     unsafe_allow_html=True
