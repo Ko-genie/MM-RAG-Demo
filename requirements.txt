@@ -3,3 +3,12 @@ openai
 google-generativeai
 embedchain
 chromadb
+python-dotenv
+diffusers==0.10.2
+transformers 
+scipy 
+ftfy 
+accelerate
+torchaudio
+torch
+torchvision
